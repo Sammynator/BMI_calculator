@@ -79,7 +79,7 @@ input[type="button"]:hover {
 
 #result {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 40px;
     color: rgb(3, 89, 3);
 }
 
@@ -99,6 +99,8 @@ input[type="button"]:hover {
     .box {
         width: 82%;
         height: auto;
+        
+
         
     }
 
