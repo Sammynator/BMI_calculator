@@ -3,6 +3,10 @@
 }
 
 
+html{
+    height: -webkit-fill-available;
+}
+
 body {
 
     background-color: #f3f3f3;
@@ -32,7 +36,6 @@ h1 {
     height: 400px;
     color: transparent;
     border-radius: 0 100px;
-
   
 }
 
@@ -40,6 +43,7 @@ label, input{
     display: block;
     font-weight: bold;
     margin-top: 10px;
+    
 }
 
 input[type="number"] {
@@ -47,7 +51,7 @@ input[type="number"] {
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 335px;
+    width: 96%;
     padding: 8px;
     margin: 6px 0;
     border: 1px solid #ccc;
@@ -80,16 +84,30 @@ input[type="button"]:hover {
 }
 
 /**––––––––––––smaller screens–––––––––––––––––*/
+
+
 @media (max-width: 1100px) {
     
-body {
-    background-size: cover;
-    background-position: 15% 30%;
-    backdrop-filter: blur(5px);
-}
+    body {
+        background-size: cover;
+        background-position: 15% 30%;
+        backdrop-filter: blur(5px);
+        height: -webkit-fill-available;
+    }
+    
+    .box {
+        width: 82%;
+        
+    }
 
-.box {
-    scale: 200%;
-}
+   label {
+        width: 70%;
+    }
 
-}
+    #result {
+        background-color: rgba(188, 188, 188, 0.601);
+        border-radius: 0 100px;
+        width: 250px;
+    }
+
+    }
